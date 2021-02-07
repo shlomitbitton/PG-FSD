@@ -18,5 +18,6 @@ public static boolean stringSearch(String input){
     System.out.println("Enter a string to search");
     String userInput = scanner.nextLine();
     System.out.println(stringSearch(userInput));
+    scanner.close();
   }
 }
