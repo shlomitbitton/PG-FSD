@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Collections2{
+public class Insertion{
 
   public static void insertionAndDeletion(){
     LinkedList<Integer> l= new LinkedList<Integer>();

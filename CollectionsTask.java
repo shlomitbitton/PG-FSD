@@ -2,7 +2,7 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.Arrays;
 
-public class Collections{
+public class CollectionsTask{
 
 
   public static Set<Integer> convertArrayToSet(){
@@ -19,4 +19,5 @@ public class Collections{
   public static void main(String[] arg){
     convertArrayToSet();
   }
+
 }
