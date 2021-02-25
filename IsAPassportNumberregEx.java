@@ -13,7 +13,7 @@ public class IsAPassportNumberregEx {
   if(passportNumber.matches("[cC][a-zA-Z0-9]{6,10}")){
     System.out.println(passportNumber+" is a valid passport number");
   }else{
-    System.out.println(passportNumber+" is not a valid passport number");
+    System.out.println(passportNumber+" is invalid passport number");
   }
 }
 }
