@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Insertion{
+public class ArrayInsertionAndDeletion{
 
   public static void insertionAndDeletion(){
     LinkedList<Integer> l= new LinkedList<Integer>();
