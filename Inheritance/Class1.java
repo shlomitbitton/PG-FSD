@@ -1,4 +1,4 @@
-package Inherirance;
+package Inheritance;
 
 public class Class1 {
 

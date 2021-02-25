@@ -1,4 +1,4 @@
-package Inherirance;
+package Inheritance;
 
 public class Class2{
     static public String a="a from Class2";
