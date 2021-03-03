@@ -28,6 +28,7 @@ public class FindAnagramInTheList {
 
   public static void main (String[] args){
 
+
     List<String> words=new ArrayList<String>();
     Map<String,String> map=new  HashMap<String,String>();
   
@@ -61,10 +62,10 @@ public class FindAnagramInTheList {
     words.add("Angel");
     words.add("Streseed");
  
-    for(int i=0;i<words.size()-1;i++){
+    for(int i=0;i<words.size();i++){
       String tmp=words.get(i);
-      for(int j=i+1;j<words.size()-1;j++){  
-         if(isValid(tmp,words.get(j))){
+      for(int j=i;j<words.size();j++){  
+         if(isValid(tmp,words.get(j)) && !tmp.equals(words.get(j))){
           map.put(tmp, words.get(j));
        }
       }
