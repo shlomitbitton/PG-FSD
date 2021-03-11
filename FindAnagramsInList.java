@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 public class FindAnagramsInList {
 
@@ -64,8 +63,10 @@ public class FindAnagramsInList {
               }
             }
       }
-    System.out.println(hashmap);
-    
+
+      for(List<String> valueList : hashmap.values()) {
+        System.out.println(valueList);
+      }
 }
 }
 
