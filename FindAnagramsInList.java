@@ -19,6 +19,7 @@ public class FindAnagramsInList {
     }
     return "";
   }
+  
 
 
   public static void main(String[] args){
@@ -55,20 +56,16 @@ public class FindAnagramsInList {
     words.add("Angel");
     words.add("Streseed");
 
-    for(int i=0;i<words.size();i++){
-      hashmap.put(words.get(i),null);
-    }
-    
-    Set<String> keys = hashmap.keySet();
-    for (String key : keys) {
+     for(String s:words){
       for(int i=0;i<words.size();i++){  
-            String st=isAnagram(key,words.get(i));
+            String st=isAnagram(s,words.get(i));
             if(!st.isEmpty()){
-              hashmap.computeIfAbsent(key,k->new ArrayList<String>()).add(st);
+               hashmap.computeIfAbsent(s,k->new ArrayList<String>()).add(st);
+              }
             }
-          }
-    }
+      }
     System.out.println(hashmap);
+    
 }
 }
 
